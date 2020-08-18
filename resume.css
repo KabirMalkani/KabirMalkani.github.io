@@ -21,10 +21,7 @@ a:hover{
 	color: white;
 }
 
-/*Horizontal Sliding*/
-.slidingHorizontal{
-	margin-left: -19.5rem
-}
+
 .slidingHorizontal span{
 	animation: leftToRight 10s linear infinite 0s;
 	-ms-animation: leftToRight 10s linear infinite 0s;
