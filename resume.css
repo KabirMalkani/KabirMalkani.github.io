@@ -21,6 +21,54 @@ a:hover{
 	color: white;
 }
 
+#company {
+	position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
+	bottom: -30vh;
+	text-align: left;
+}
+
+#project {
+	position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
+	bottom: -30vh;
+	right:0;
+	text-align: right;
+}
+
+#resumelink{
+	float: right;
+}
+
+#linkedinlink, #githublink{
+	margin-left: 4rem
+}
+
+
+@media screen and (max-width: 700px), screen and (max-height: 400px){
+	#project{
+		padding-top: 2rem;
+    	position: static; /* The width is 100%, when the viewport is 800px or smaller */
+   		text-align: left;
+  	}
+	#company {
+		padding-top: 2rem;
+    	position: static; /* The width is 100%, when the viewport is 800px or smaller */
+  	}
+  	#space {
+  		display: none;
+  	}
+  	.hero{
+		background-size: auto 100%;
+		background-position: center; 
+	}
+}
+
+@media screen and (max-width: 400px){
+	#resumelink, #linkedinlink, #githublink{
+		float: none;
+		margin-left: 2rem
+	}
+}
+
 
 .slidingHorizontal span{
 	animation: leftToRight 10s linear infinite 0s;
