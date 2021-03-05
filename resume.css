@@ -39,7 +39,7 @@ a.subtitle.is-6, #icons a{
 
 }
 
-a.subtitle.is-5:hover, #icons a:hover{
+a.subtitle.is-5:hover, #icons a:hover, .card-header-icon:hover{
 	color: #8f8fef
 }
 

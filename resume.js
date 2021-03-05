@@ -1,5 +1,5 @@
 function toggleDesc(elem){
-    $(elem).parent().next().toggle()
+    $(elem).next().toggle()
     $(elem).find('i').toggleClass('fa-angle-down')
     $(elem).find('i').toggleClass('fa-angle-up')
 }
