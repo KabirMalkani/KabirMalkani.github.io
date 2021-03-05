@@ -22,11 +22,16 @@ html {
 
 .coverdiv{
 	background-color: rgba(0,0,0,0.5);
-	color: white;
+	color: rgba(255, 255, 255, 0.95);
 }
 
 a.subtitle.is-5, #icons a{
-	color: white
+	color: rgba(255, 255, 255, 0.95)
+}
+
+.card{
+    background-color: rgba(255, 255, 255, 0.95)
+
 }
 
 a.subtitle.is-5:hover, #icons a:hover{
@@ -51,7 +56,7 @@ a.card-footer-item:hover{
 }
 
 .title, .subtitle{
-	color: white;
+	color: rgba(255, 255, 255, 0.95);
 }
 
 #company {
@@ -72,7 +77,7 @@ a.card-footer-item:hover{
 }
 
 #linkedinlink, #githublink{
-	margin-left: 4rem
+	margin-left: 2rem
 }
 
 
@@ -110,27 +115,27 @@ a.card-footer-item:hover{
 
 
 .slidingHorizontal span{
-	animation: leftToRight 10s linear infinite 0s;
-	-ms-animation: leftToRight 10s linear infinite 0s;
-	-webkit-animation: leftToRight 10s linear infinite 0s;
+	animation: leftToRight 16s linear infinite 0s;
+	-ms-animation: leftToRight 16s linear infinite 0s;
+	-webkit-animation: leftToRight 16s linear infinite 0s;
 	opacity: 0;
 	overflow: hidden;
 	position: absolute;
 }
 .slidingHorizontal span:nth-child(2){
-	animation-delay: 2.5s;
-	-ms-animation-delay: 2.5s;
-	-webkit-animation-delay: 2.5s;
+	animation-delay: 4s;
+	-ms-animation-delay: 4s;
+	-webkit-animation-delay: 4s;
 }
 .slidingHorizontal span:nth-child(3){
-	animation-delay: 5s;
-	-ms-animation-delay: 5s;
-	-webkit-animation-delay: 5s;
+	animation-delay: 8s;
+	-ms-animation-delay: 8s;
+	-webkit-animation-delay: 8s;
 }
 .slidingHorizontal span:nth-child(4){
-	animation-delay: 7.5s;
-	-ms-animation-delay: 7.5s;
-	-webkit-animation-delay: 7.5s;
+	animation-delay: 12s;
+	-ms-animation-delay: 12s;
+	-webkit-animation-delay: 12s;
 }
 
 
@@ -169,28 +174,28 @@ a.card-footer-item:hover{
  justify-content: center;
  align-items: center;
  position: fixed;
- bottom: 2%;
- left: 50%;
- height: 7rem;
+ bottom: 4rem;
+ right: 5%;
+ height: 3rem;
  width: 4rem;
  background-color: transparent;
 }
 
 .chevron {
   position: absolute;
-  width: 4rem;
-  height: 0.7rem;
+  width: 3rem;
+  height: 0.4rem;
   opacity: 0;
-  transform: scale(0.3);
-  animation: move-chevron 7.5s ease-out infinite;
+  transform: scale(0.7);
+  animation: move-chevron 12s ease-out infinite;
 }
 
 .chevron:first-child {
-  animation: move-chevron 7.5s ease-out 2.5s infinite;
+  animation: move-chevron 12s ease-out 4s infinite;
 }
 
 .chevron:nth-child(2) {
-  animation: move-chevron 7.5s ease-out 5s infinite;
+  animation: move-chevron 12s ease-out 8s infinite;
 }
 
 .chevron:before,
@@ -200,7 +205,7 @@ a.card-footer-item:hover{
  top: 0;
  height: 100%;
  width: 50%;
- background: white;
+ background: rgba(255, 255, 255, 0.95);
 }
 
 .chevron:before {
