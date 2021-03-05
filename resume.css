@@ -1,3 +1,8 @@
+
+.card-footer-item:not(:last-child) {
+    border-right: none
+}
+
 body{
     background-image: url('background.jpg'); 
 	background-attachment: fixed;
@@ -25,7 +30,7 @@ html {
 	color: rgba(255, 255, 255, 0.95);
 }
 
-a.subtitle.is-5, #icons a{
+a.subtitle.is-6, #icons a{
 	color: rgba(255, 255, 255, 0.95)
 }
 
