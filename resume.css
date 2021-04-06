@@ -81,7 +81,7 @@ a.card-footer-item:hover{
 	float: right;
 }
 
-#linkedinlink, #githublink{
+#glink, #flink{
 	margin-left: 2rem
 }
 
@@ -109,7 +109,7 @@ a.card-footer-item:hover{
 }
 
 @media screen and (max-width: 425px){
-	#resumelink, #linkedinlink, #githublink{
+	#resumelink, #flink, #glink{
 		float: none;
 		margin-left: 2rem
 	}
