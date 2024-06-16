@@ -1,189 +1,245 @@
-
 .card-footer-item:not(:last-child) {
-    border-right: none
+  border-right: none;
 }
 
-body{
-    background-image: url('background.jpg'); 
-	background-attachment: fixed;
-	background-size: 100% 100%; 
+body {
+  background-image: url("background.jpg");
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  height: 100%;
+  overflow-y: hidden;
 }
 
-ul li{
-	margin-bottom: 1rem
+ul li {
+  margin-bottom: 1rem;
 }
 
 html {
   scroll-behavior: smooth;
 }
 
-.when{
-	color: gray;
-	margin-left: auto;
-	font-style: italic;
-	font-weight: 400;
-	margin-right: 1rem
+.when {
+  color: gray;
+  margin-left: auto;
+  font-style: italic;
+  font-weight: 400;
+  margin-right: 1rem;
 }
 
-.coverdiv{
-	background-color: rgba(0,0,0,0.5);
-	color: rgba(255, 255, 255, 0.95);
+.coverdiv {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.95);
 }
 
-a.subtitle.is-6, #icons a{
-	color: rgba(255, 255, 255, 0.95)
+a.subtitle.is-6,
+#icons a {
+  color: rgba(255, 255, 255, 0.95);
 }
 
-.card{
-    background-color: rgba(255, 255, 255, 0.95)
-
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
 }
 
-a.subtitle.is-6:hover, #icons a:hover, .card-header-icon:hover{
-	color: #8f8fef
+a.subtitle.is-6:hover,
+#icons a:hover,
+.card-header-icon:hover {
+  color: #8f8fef;
 }
 
-a{
-	color: #8f8fef
+a {
+  color: #8f8fef;
 }
 
-a:hover{
-	color: blue;
+a:hover {
+  color: blue;
 }
 
-a.card-footer-item:hover{
-	color: #8f8fef
+a.card-footer-item:hover {
+  color: #8f8fef;
 }
 
-.card{
-	border-radius: 0.5rem;
-	margin: 3rem 0 4rem;
+.card {
+  border-radius: 0.5rem;
+  margin: 3rem 0 4rem;
 }
 
-.title, .subtitle{
-	color: rgba(255, 255, 255, 0.95);
+.title,
+.subtitle {
+  color: rgba(255, 255, 255, 0.95);
 }
 
 #company {
-	position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
-	bottom: -33vh;
-	text-align: left;
+  position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
+  bottom: -33vh;
+  text-align: left;
 }
 
 #project {
-	position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
-	bottom: -30vh;
-	right:0;
-	text-align: right;
+  position: absolute; /* The width is 100%, when the viewport is 800px or smaller */
+  bottom: -30vh;
+  right: 0;
+  text-align: right;
 }
 
-#resumelink{
-	float: right;
+#resumelink {
+  float: right;
 }
 
-#glink, #flink{
-	margin-left: 2rem
+#glink,
+#flink {
+  margin-left: 2rem;
 }
 
-
-@media screen and (max-width: 700px), screen and (max-height: 400px){
-	#project{
-		padding-top: 2rem;
-    	position: static; /* The width is 100%, when the viewport is 800px or smaller */
-   		text-align: left;
-  	}
-	#company {
-		padding-top: 2rem;
-    	position: static; /* The width is 100%, when the viewport is 800px or smaller */
-  	}
-  	#space {
-  		display: none;
-  	}
-  	.hero{
-		background-size: auto 100%;
-		background-position: center; 
-	}
-	#scrollarrow{
-		display: none!important
-	}
+@media screen and (max-width: 700px), screen and (max-height: 400px) {
+  #project {
+    padding-top: 2rem;
+    position: static; /* The width is 100%, when the viewport is 800px or smaller */
+    text-align: left;
+  }
+  #company {
+    padding-top: 2rem;
+    position: static; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+  #space {
+    display: none;
+  }
+  .hero {
+    background-size: auto 100%;
+    background-position: center;
+  }
+  #scrollarrow {
+    display: none !important;
+  }
 }
 
-@media screen and (max-width: 425px){
-	#resumelink, #flink, #glink{
-		float: none;
-		margin-left: 2rem
-	}
-	.when{
-		display: none
-	}
+@media screen and (max-width: 425px) {
+  #resumelink,
+  #flink,
+  #glink {
+    float: none;
+    margin-left: 2rem;
+  }
+  .when {
+    display: none;
+  }
 }
 
-
-.slidingHorizontal span{
-	animation: leftToRight 16s linear infinite 0s;
-	-ms-animation: leftToRight 16s linear infinite 0s;
-	-webkit-animation: leftToRight 16s linear infinite 0s;
-	opacity: 0;
-	overflow: hidden;
-	position: absolute;
+.slidingHorizontal span {
+  animation: leftToRight 16s linear infinite 0s;
+  -ms-animation: leftToRight 16s linear infinite 0s;
+  -webkit-animation: leftToRight 16s linear infinite 0s;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
 }
-.slidingHorizontal span:nth-child(2){
-	animation-delay: 4s;
-	-ms-animation-delay: 4s;
-	-webkit-animation-delay: 4s;
+.slidingHorizontal span:nth-child(2) {
+  animation-delay: 4s;
+  -ms-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
 }
-.slidingHorizontal span:nth-child(3){
-	animation-delay: 8s;
-	-ms-animation-delay: 8s;
-	-webkit-animation-delay: 8s;
+.slidingHorizontal span:nth-child(3) {
+  animation-delay: 8s;
+  -ms-animation-delay: 8s;
+  -webkit-animation-delay: 8s;
 }
-.slidingHorizontal span:nth-child(4){
-	animation-delay: 12s;
-	-ms-animation-delay: 12s;
-	-webkit-animation-delay: 12s;
+.slidingHorizontal span:nth-child(4) {
+  animation-delay: 12s;
+  -ms-animation-delay: 12s;
+  -webkit-animation-delay: 12s;
 }
-
 
 /*leftToRight Animation*/
-@-moz-keyframes leftToRight{
-	0% { opacity: 0; }
-	5% { opacity: 0; -moz-transform: translateX(-50px); }
-	10% { opacity: 1; -moz-transform: translateX(0px); }
-	25% { opacity: 1; -moz-transform: translateX(0px); }
-	30% { opacity: 0; -moz-transform: translateX(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+@-moz-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -moz-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -moz-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -moz-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-@-webkit-keyframes leftToRight{
-	0% { opacity: 0; }
-	5% { opacity: 0; -webkit-transform: translateX(-50px); }
-	10% { opacity: 1; -webkit-transform: translateX(0px); }
-	25% { opacity: 1; -webkit-transform: translateX(0px); }
-	30% { opacity: 0; -webkit-transform: translateX(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+@-webkit-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -webkit-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -webkit-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-@-ms-keyframes leftToRight{
-	0% { opacity: 0; }
-	5% { opacity: 0; -ms-transform: translateX(-50px); }
-	10% { opacity: 1; -ms-transform: translateX(0px); }
-	25% { opacity: 1; -ms-transform: translateX(0px); }
-	30% { opacity: 0; -ms-transform: translateX(50px); }
-	80% { opacity: 0; }
-	100% { opacity: 0; }
+@-ms-keyframes leftToRight {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+    -ms-transform: translateX(-50px);
+  }
+  10% {
+    opacity: 1;
+    -ms-transform: translateX(0px);
+  }
+  25% {
+    opacity: 1;
+    -ms-transform: translateX(0px);
+  }
+  30% {
+    opacity: 0;
+    -ms-transform: translateX(50px);
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-
-
 
 #scrollarrow {
- justify-content: center;
- align-items: center;
- position: fixed;
- bottom: 4rem;
- right: 5%;
- height: 3rem;
- width: 4rem;
- background-color: transparent;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 4rem;
+  right: 5%;
+  height: 3rem;
+  width: 4rem;
+  background-color: transparent;
 }
 
 .chevron {
@@ -205,39 +261,39 @@ a.card-footer-item:hover{
 
 .chevron:before,
 .chevron:after {
- content: '';
- position: absolute;
- top: 0;
- height: 100%;
- width: 50%;
- background: rgba(255, 255, 255, 0.95);
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 50%;
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .chevron:before {
- left: 0;
- transform: skewY(30deg);
+  left: 0;
+  transform: skewY(30deg);
 }
 
 .chevron:after {
- right: 0;
- width: 50%;
- transform: skewY(-30deg);
+  right: 0;
+  width: 50%;
+  transform: skewY(-30deg);
 }
 
 @keyframes move-chevron {
- 25% {
-  opacity: 1;
-	}
- 33.3% {
-  opacity: 1;
-  transform: translateY(3.8rem);
- }
- 66.6% {
-  opacity: 1;
-  transform: translateY(5.2rem);
- }
- 100% {
-  opacity: 0;
-  transform: translateY(8)rem scale(0.5);
- }
+  25% {
+    opacity: 1;
+  }
+  33.3% {
+    opacity: 1;
+    transform: translateY(3.8rem);
+  }
+  66.6% {
+    opacity: 1;
+    transform: translateY(5.2rem);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(8) rem scale(0.5);
+  }
 }
